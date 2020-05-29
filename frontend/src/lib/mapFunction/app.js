@@ -7,7 +7,7 @@ import ControlPanel from './control-panel';
 import Pins from './pins';
 import CityInfo from './city-info';
 
-// import CITIES from '../../.data/cities.json';
+
 
 const TOKEN = 'pk.eyJ1IjoiYnJvYm8xIiwiYSI6ImNrYTU2YWZ1aTAwNnozcHFrMjR3Ym1wbGEifQ.6oCNHwKPmFw0nOUHivbM9Q';
 
@@ -86,7 +86,7 @@ export default class App extends Component {
         onViewportChange={this._updateViewport}
         mapboxApiAccessToken={TOKEN}
       >
-        {/* <Pins data={CITIES} onClick={this._onClickMarker} /> */}
+       
 
         {this._renderPopup()}
 

@@ -6,7 +6,7 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 .background-image{
 background-image: url(https://millionmilesecrets.com/wp-content/uploads/shutterstock_547827592.jpg);
 background-size: cover;
-// padding-bottom:100px;
+
 
 .background{
   background: radial-gradient(circle, rgba(53,79,82,0.95) 0%, rgba(33,49,51,0.95) 92%);
@@ -21,7 +21,6 @@ background-size: cover;
     height: 50px;
   }
 
-//* Cover Page
 .hero{
   display: flex;
   flex-direction: row;
@@ -85,7 +84,6 @@ background-size: cover;
   flex-direction: row-reverse;
   justify-content: space-around;
   color: white;
-  // width: 65%;
   .title{
     font-size: 35px;
     margin: 35px;
@@ -93,7 +91,6 @@ background-size: cover;
   .bio{
     background-color: rgba(0,0,0,0.5);
     border-radius: 5px;
-    // height: 345px;
     max-width: 455px;
     padding: 20px;
   }
@@ -109,7 +106,6 @@ background-size: cover;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-  // box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 1);
     .image{
       box-shadow: 0px 0px 10px black;
     }
@@ -158,7 +154,6 @@ background-size: cover;
   }
 }
 
-//* message page
 .message {
   display: flex;
   flex-direction: column;
@@ -243,7 +238,6 @@ textarea {
 }
 
 
-//* Profile Page
 .cover{
   display: flex;
   flex-direction: row;
@@ -291,8 +285,6 @@ textarea {
   width: 300px;
 }
 
-
-//* Login/Register Pages - use this form formatting throughout
 .section{
   display: flex;
   flex-direction: column;
@@ -462,7 +454,6 @@ textarea {
              
           }
           .blurb {
-            //* this is for the text that shows up when you hover over an image on index page
             position: relative;
             top: -80px;
             background: rgba(1,1,1,0.5);
@@ -504,10 +495,6 @@ textarea {
       justify-content: space-evenly;
       height: 100%;
       width: 100%;
-      // .map-width{
-      //   width:100%;
-      //   height: 100%;
-      // }
       .map-inputs{
         display:flex;
         flex-direction: column;
@@ -701,7 +688,6 @@ textarea {
       box-shadow: 0 0px 10px darkgray;
       height: 50px;
       background-color: #9d0208;
-      // margin: 50px;
     }
   }
 }
@@ -894,10 +880,7 @@ text-decoration: underline;
   }
   .show-carousel{
     width: 800px;
-    // height: 600px;
-    // background-color: white;
     .carousel{
-      // margin-bottom: 80px;
       display: flex;
       flex-direction: row;
       justify-content: space-around;
@@ -911,7 +894,6 @@ text-decoration: underline;
         box-shadow: 0px 0px 20px black;
         }
       .thumb{
-        // display: none;
         height:70px;
         object-fit: cover;
       }
@@ -929,7 +911,6 @@ text-decoration: underline;
   display: flex;
   flex-direction: column;
   align-items: center;
-  // background-color: gray;
   height: auto;
   .comments-title{
     background-color: none;
@@ -966,7 +947,6 @@ text-decoration: underline;
       }
       .comment-text{
         padding: 5px 5px;
-        // background-color: white;
 
       }
     }
@@ -1039,8 +1019,6 @@ text-decoration: underline;
   bottom: 0;
   }
 
-  // nav bar pre-sets
-  /* Position and sizing of burger button */
 .bm-burger-button {
   position: absolute;
   width: 40px;
@@ -1050,40 +1028,35 @@ text-decoration: underline;
 }
 
 
-/* Color/shape of burger icon bars */
 .bm-burger-bars {
   background: white;
   border-radius: 3px;
   height:2px;
 }
 
-/* Color/shape of burger icon bars on hover*/
 .bm-burger-bars-hover {
   background: #b8b7ad;
   
 }
 
-/* Position and sizing of clickable cross button */
+
 .bm-cross-button {
   height: 24px;
   width: 24px;
 }
 
-/* Color/shape of close button cross */
+
 .bm-cross {
   background: #bdc3c7;
 }
 
-/*
-Sidebar wrapper styles
-Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
-*/
+
 .bm-menu-wrap {
   position: fixed;
   height: 100%;
 }
 
-/* General sidebar styles */
+
 .bm-menu {
   background: #373a47;
   padding: 2.5em 1.5em 0;
@@ -1094,28 +1067,24 @@ Note: Beware of modifying this element as it can break the animations - you shou
   }
 }
 
-/* Morph shape necessary with bubble or elastic */
+
 .bm-morph-shape {
   fill: #373a47;
 }
 
-/* Wrapper for item list */
 .bm-item-list {
   color: #b8b7ad;
   padding: 0.8em;
 }
 
-/* Individual item */
 .bm-item {
   display: inline-block;
 }
 
-/* Styling of overlay */
 .bm-overlay {
   background: rgba(0, 0, 0, 0.3);
 }
 
-// nav bar custom
 
 .links {
   display: flex;
@@ -1142,7 +1111,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 }
 
 
-//* Profile Edit Page
+
 .edit-title{
   color: white;
   padding: 10px 0 8px;
@@ -1161,9 +1130,9 @@ Note: Beware of modifying this element as it can break the animations - you shou
     .edit-profile-photos{
       display: flex;
       flex-direction: row;
-      // width: 50%;
+
       align-items: center;
-      // justify-content: space-around;
+
   
       .edit-photos{
         display: flex;
@@ -1190,8 +1159,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
   .bottom-section{
     display: flex;
     justify-content: center;
-    // margin-right: 223px;
-    // margin-left: 223px;
+
     margin-bottom: 20px;
     .edit-profile-icons{
       display: flex;
@@ -1204,7 +1172,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
         align-items: center;
         align-content: stretch;
         padding: 13px;
-        // margin-bottom: 20px;
+
       }
     }
   }
@@ -1213,9 +1181,9 @@ Note: Beware of modifying this element as it can break the animations - you shou
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    // margin: 50px;
+ 
     height: 200px;
-    // align-content: space-around;
+
     
     .input-box{
       padding: 8px;
@@ -1253,12 +1221,12 @@ Note: Beware of modifying this element as it can break the animations - you shou
   background-color: rgba(250, 100, 0, 0.7);
   .header-left{
     padding-left: 10px;
-    // width: 70px;
+
   }
   .header-right{
     width:95px;
     height:100%;
-    // background-color:#9d0208;
+
     margin-right:30px;
     button.edit-your-profile{
       transform: translate(-100px);
@@ -1285,7 +1253,6 @@ Note: Beware of modifying this element as it can break the animations - you shou
 }
 
 
-//* MEDIA QUERIES ----------------------------------------------------
 
 @media screen and (max-width: 500px) {
 img.nav-logo{

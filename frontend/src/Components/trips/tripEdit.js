@@ -77,7 +77,7 @@ class TripEdit extends React.Component {
   handleTripSearch = () => {
     const finalTrip = {...this.state.tempTrip}
     const formData = {...this.state.formData , ...finalTrip}
-    // console.log(state)
+
     this.setState({ formData })
   }
 

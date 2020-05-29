@@ -1,11 +1,10 @@
 import React from 'react'
 import axios from 'axios'
 
-const uploadUrl = 'https://api.cloudinary.com/v1_1/a-der/image/upload'
 
-//* obscure later .env folder
-const uploadPreset = 'ambkscwe'
-// const uploadPreset = process.env.REACT_APP_SECRET_PRESET
+
+const uploadUrl = process.env.REACT_APP_SECRET_API
+const uploadPreset = process.env.REACT_APP_SECRET_PRESET
 
 class ImageUpload extends React.Component {
   state = {

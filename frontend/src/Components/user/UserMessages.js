@@ -67,7 +67,9 @@ return (
   <div className="header-left">
     <Link to='/'><img className="nav-logo" alt="logo" src={RTimage} height="50" /></Link>
   </div>
-  <div className="header-right"></div>
+  <div className="header-right">
+  {<button onClick={this.props.history.goBack} className="back-button" type="button">Back</button>} 
+  </div>
 </div>
   <section className="message">
     <h3>Conversation between
@@ -85,11 +87,7 @@ return (
       } </h3>
 
     <div className="message-body">
-      {/* <p className={
-        this.filterMessages().sender._id === this.state.user._id 
-        ? 'you' 
-        : 'them'
-      }>{this.filterMessages()?.text}</p> */}
+      
       <div className="messages">
 
       {this.filterMessages().comment?.map(comment => (
@@ -116,7 +114,7 @@ return (
       </form>
     </div>
         </div>
-        {/* </div> */}
+      
   </section>
   </div>
 )

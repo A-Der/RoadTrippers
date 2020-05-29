@@ -93,22 +93,6 @@ async function commentCreate(req, res, next) {
   }
 }
 
-// async function messageDelete(req, res, next) {
-//   try {
-//     const tripId = req.params.id
-//     const commentId = req.params.commentId
-//     const trip = await Trips.findById(tripId)
-//     if (!trip) throw new Error(notFound)
-//     const commentToRemove = trip.recommendations.id(commentId)
-//     if (!commentToRemove) throw new Error(notFound)
-//     // if (!commentToRemove.user.equals(req.currentUser._id) || !trip.user.equals(req.currentUser._id)) throw new Error()
-//     await commentToRemove.remove()
-//     await trip.save()
-//     res.sendStatus(204)
-//   } catch (err) {
-//     next(err)
-//   }
-// }
 
 
 
@@ -120,6 +104,6 @@ module.exports = {
   messageCreate: messageCreate,
   commentCreate: commentCreate,
   getMessage: getMessage
-  // messageDelete: messageDelete
+
 
 }

@@ -1,4 +1,3 @@
-//* the reccomendations field will be part of the model schema as it will be an array of comment schemas. (reference to dinoboard models/dinosaurs & db/data/dinosaurs)
 
 module.exports = [
   {
@@ -435,17 +434,6 @@ module.exports = [
     highlights: ['Rally', 'Friends', 'Getting into trouble', 'Getting out of troube'],
     pastTravellers: ['user123', 'fakeuser12']
   }
-
-
-
-
-
-
-
-
-
-
-
 
 
 

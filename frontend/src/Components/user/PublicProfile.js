@@ -42,14 +42,7 @@ class PublicProfile extends React.Component {
       console.log(err)
     }
   }
-  // async getRoutes() {
-  //   const res = await axios.get('/api/trips')
-  //   const userTrips = res.filter(object => (
-  //     object._id === this.props.match.params.userId
-  //   ))
-  //   console.log(userTrips)
-  //   this.setState({ userTrips })
-  // }
+
 
   handleChange = e => {
     const text = e.target.value
@@ -84,14 +77,14 @@ class PublicProfile extends React.Component {
   }
 
   render() {
-    // console.log(icons[0].name)
+
     const { username, name, garage, dreamTrips, profilePhoto, recentTrips, homeBase, tripPrefs } = this.state.user
 
     const filteredIcons = icons.filter(icon => tripPrefs.includes(icon.name))
-    // console.log(filteredIcons)
+
     const modalStyle = {
       content: {
-        // position: "fixed",
+  
         left: "20%",
         border: "1px solid rgb(204, 204, 204)",
         background: "rgba(15, 15, 15, 0.8)",
@@ -173,17 +166,13 @@ class PublicProfile extends React.Component {
               {isAuthenticated() ?
                 <form onSubmit={this.handleSubmit}>
                   <div className="add-message">
-                    {/* <textarea
-                      placeholder="Start a new Conversation"
-                      onChange={this.handleChange}
-                      className="comment-input"
-                    /> */}
+                   
                     <button className="message-btn">Start a Conversation</button>
                   </div>
                 </form>
                 : <p className="message-holder">Please login to start a conversation</p>}
 
-              {/* <button>Follow</button> */}
+             
             </div>
           </div>
           <div className="caro-div">
@@ -197,7 +186,7 @@ class PublicProfile extends React.Component {
                   <img src={trip}
                     alt=""
                     className="carousel-image" />
-                  {/* <p className="legend"></p> */}
+                
                 </div>)}
             </Carousel>
           </div>

@@ -12,7 +12,7 @@ async function tripsIndex(req, res, next) {
   }
 }
 
-// create
+
 
 async function tripsCreate(req, res, next) {
 
@@ -26,7 +26,7 @@ async function tripsCreate(req, res, next) {
   }
 }
 
-// read
+
 
 async function tripsShow(req, res, next) {
   const tripId = req.params.id
@@ -41,14 +41,14 @@ async function tripsShow(req, res, next) {
 
 }
 
-// update
+
 
 async function tripsUpdate(req, res, next) {
   const tripId = req.params.id
   try {
     const trip = await Trips.findById(tripId)
     if (!trip) throw new Error(notFound)
-    // if (!trip.user.equals(req.currentUser._id)) throw new Error()
+
     Object.assign(trip, req.body)
     await trip.save()
     res.status(202).json(trip)
@@ -57,14 +57,13 @@ async function tripsUpdate(req, res, next) {
   }
 }
 
-// delete
 
 async function tripsDelete(req, res, next) {
   const tripId = req.params.id
   try {
     const tripToDelete = await Trips.findById(tripId)
     if (!tripToDelete) throw new Error('Not Found')
-    // if (!trip.user.equals(req.currentUser._id)) throw new Error()
+
     await tripToDelete.remove()
     res.sendStatus(204)
   } catch (err) {
@@ -72,7 +71,7 @@ async function tripsDelete(req, res, next) {
   }
 }
 
-///recommendations
+
 
 async function recommendationsCreate(req, res, next) {
   try {
@@ -96,7 +95,7 @@ async function recommendationsDelete(req, res, next) {
     if (!trip) throw new Error(notFound)
     const commentToRemove = trip.recommendations.id(commentId)
     if (!commentToRemove) throw new Error(notFound)
-    // if (!commentToRemove.user.equals(req.currentUser._id) || !trip.user.equals(req.currentUser._id)) throw new Error()
+
     await commentToRemove.remove()
     await trip.save()
     res.sendStatus(204)
