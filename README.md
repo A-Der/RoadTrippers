@@ -54,7 +54,8 @@ Working on both back anf front end of development, it was captivating to see how
 - VS Code Editor
 - GitHub
 - Git
-- Balsamiq
+- Insomnia
+- Balsamiq.com
 - Chrome Dev Tools
 - Heroku
 
