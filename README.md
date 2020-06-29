@@ -7,7 +7,7 @@
 Working in a group this was our first time putting together a full stack app. We brainstormed and pooled our ideas, brainstorming aloud, picking out parts of ideas we liked until something was unintentionally born that everyone had contributed to. No one person thought of it yet we all have a share of it.
 We then worked together to create a wireframe using balsamiq.com
 Roadtrippers is a community based travel app specifically for road routes.
-Working on both back anf front end of development, it was captivating to see how to bring both those ends together and I thoroughly enjoyed my first experience in full stack development.
+Working on both back and front end of development, it was captivating to see how to bring both those ends together and I thoroughly enjoyed my first experience in full stack development.
 
 ----------------
 
