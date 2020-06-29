@@ -66,7 +66,7 @@ As there was 3 of us, we decided 1 person shall start scaffolding out the front 
 # Backend
 *Models:*
 
-- We created 3 main schemas using Mongoose, also taking advantage of Mongoose's ability to creae virtual fields which we used to create a password confirmation field to validate the users password upon registration. Using Bcrypt we prevalidated password comparisons, if this passed we then hashed them before they were saved to protect the users password. Following this we edited the JSON response to stop the email and password being sent back in the response to the client.
+- We created 3 main schemas using Mongoose, also taking advantage of Mongoose's ability to create virtual fields which we used to create a password confirmation field to validate the users password upon registration. Using Bcrypt we prevalidated password comparisons, if this passed we then hashed them before they were saved to protect the users password. Following this we edited the JSON response to stop the email and password being sent back in the response to the client.
 - Besides our 3 main schemas we used schemas to be used in some fields of our main schemas:
 -Our Message schema; aside from the sender and recipient field, has a comment field which is made up of an array of Comment schemas. Our comment schemas 2 fields; User and Text.
 -Our Trip schema; had a field for recommendation field which was an array of reccomendation schemas. Very similar to our message and comment.
