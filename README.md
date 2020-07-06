@@ -74,6 +74,10 @@ Working on both back and front end of development, it was captivating to see how
 ## Approach
 As there was 3 of us, we decided 1 person shall start scaffolding out the front to prepare to recieve the backend while me and my colleague kitted out the backend using Mongoose to create our database. We kept communication between the 3 of us open and accessible to make sure our work would sync in harmony.
 
+We first started with Balsamiq to get our wireframes down and all understanding and in agreement with the specifiction.
+
+![my screenshot](readme-images/wireframe.png)
+
 # Backend
 *Models:*
 
