@@ -134,8 +134,18 @@ class Profile extends React.Component {
             In the garage <span style={{ color: "#fa6400" }}>{garage}</span> <hr></hr><br></br>
             Ultimate Trip <span style={{ color: "#fa6400" }}>{dreamTrips}</span><hr></hr><br></br>
               <h4>PREFERENCES</h4>
-              {filteredIcons.map(icon => <ReactTooltip key={icon.name} id={icon.name} place="top" effect="solid">{icon.name}</ReactTooltip>)}
-              {filteredIcons.map(icon => <label key={icon.name} data-tip data-for={icon.name}>{icon.value}</label>)}
+              {filteredIcons.map(icon => 
+              <ReactTooltip 
+              key={icon.name} 
+              id={icon.name} 
+              place="top" 
+              effect="solid">{icon.name}</ReactTooltip>)}
+
+              {filteredIcons.map(icon => 
+              <label 
+              key={icon.name} 
+              data-tip data-for={icon.name}>
+                {icon.value}</label>)}
             </div>
          
             <div className="profile-messages">

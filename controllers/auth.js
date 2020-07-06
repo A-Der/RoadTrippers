@@ -15,21 +15,15 @@ async function register(req, res, next) {
 async function login(req, res, next) {
   try {
     const user = await User.findOne({ email: req.body.email })
-
     if (!user || !user.validatePassword(req.body.password)) {
-
-
       throw new Error(unauthorized)
-
     }
     const token = jwt.sign({ sub: user._id }, secret, { expiresIn: '10 days' })
     res.status(202).json({
       message: `Welcome back ${user.username}`,
       token
     })
-
   } catch (err) {
-
     next(err)
   }
 }
